@@ -1,0 +1,98 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar maincontent";
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "headerrowone"
+        "headerrowtwo";
+}
+
+.headerrowone{
+    grid-area: headerrowone;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.headerrowtwo{
+    grid-area: headerrowtwo;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.hiusername2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.maincontent{
+    grid-area: maincontent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas: 
+        "yp yp yp"
+        "card1 card2 card3"
+        "card4 card5 card6";
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.yp{
+    grid-area: yp;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+
+.card5{
+    grid-area: card5;
+}
+
+.card6{
+    grid-area: card6;
+}
+
+.announcetrend{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
