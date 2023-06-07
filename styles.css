@@ -1,7 +1,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 150px 1fr;
     grid-template-areas:
         "sidebar header"
         "sidebar maincontent";
@@ -22,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
+    margin-bottom: 20px;
 }
 
 .headerrowtwo{
@@ -31,10 +32,13 @@
     grid-template-rows: 1fr;
 }
 
+
 .hiusername2{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
 }
 
 .hiuser{
@@ -46,12 +50,35 @@
     background-color: #1892d3;
     font-size: 30px;
     color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.smalltext{
+    font-size: 22px;
+    padding: 5px;
+}
+
+.dashboard{
+    margin-bottom: 50px;
+    font-size:35px;
+    margin: none;
+    display: flex;
+}
+
+.dashboard svg{
+    margin-right: 10px;
+}
+
+.communities{
+    margin-bottom: 50px;
 }
 
 .maincontent{
     grid-area: maincontent;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
     background-color: #e1e8f0;
@@ -60,7 +87,7 @@
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: 50px 400px 500px;
     grid-template-areas: 
         "yp yp yp"
         "card1 card2 card3"
@@ -72,7 +99,7 @@
 
 .heading{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .yp{
@@ -86,6 +113,8 @@
     border-left: 5px solid #f1b32b;
     border-radius: 10px;
     padding: 10px;
+    height: 300px;
+    
 }
 
 .card2{
@@ -95,6 +124,8 @@
     border-left: 5px solid #f1b32b;
     border-radius: 10px;
     padding: 10px;
+    height: 300px;
+    
 }
 
 .card3{
@@ -104,6 +135,8 @@
     border-left: 5px solid #f1b32b;
     border-radius: 10px;
     padding: 10px;
+    height: 300px;
+    
 }
 
 .card4{
@@ -113,6 +146,7 @@
     border-left: 5px solid #f1b32b;
     border-radius: 10px;
     padding: 10px;
+    height: 300px;
 }
 
 .card5{
@@ -122,6 +156,7 @@
     border-left: 5px solid #f1b32b;
     border-radius: 10px;
     padding: 10px;
+    height: 300px;
 }
 
 .card6{
@@ -131,30 +166,66 @@
     border-left: 5px solid #f1b32b;
     border-radius: 10px;
     padding: 10px;
+    height: 300px;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons svg{
+    margin: 10px;
 }
 
 .announcetrend{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 50px 1fr;
+    margin: 20px;
 }
 
-.sidebar  svg{
+.smalltext  svg{
     height: 20px;
     width: 20px;
     fill: white;
+    margin-right: 20px;
 } 
 
-svg {
+/* svg {
     height: 20px;
     width: 20px;
-}
+} */
 
 .searchbar{
     height: 20px;
-    width: 500px;
+    width: 600px;
     background-color: #e1e8f0;
     border-radius: 25px;
+}
+
+.searchbarmega{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 15px;
+    gap: 10px;
+    align-items: center;
+}
+
+.threeicons{ 
+    display: flex;
+    width: 400px;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.threeicons div {
+    margin-left: 40px;
+}
+
+.username{
+    font-weight: bold;
 }
 
 button{
@@ -169,8 +240,54 @@ button{
 
 .announcements{
     background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .trend{
     background-color: white;
+    width: 250px;
 }
+
+.trending{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;;
+    height: 250px;
+}
+
+.announce{
+    padding: 10px;
+    border-bottom: 1px lightblue solid;
+}
+
+.iconlabel{
+    display: flex;
+}
+
+.iconname{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    justify-content: center;
+}
+
+.gray{
+    color: gray;
+}
+
+.mainic{
+    display: grid;
+    grid-template-columns: 20px 300px;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 390px;
+}
+
+.riz{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
